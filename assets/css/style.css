@@ -1,19 +1,15 @@
 /*=== abstracts css start === */
 @font-face {
-  font-family: "KozGoPro";
-  src: url(../fonts/KozGoPro-ExtraLight.otf);
+  font-family: "Barbara";
+  src: url(../fonts/Barbara.ttf);
 }
 @font-face {
-  font-family: "TahomaBold";
-  src: url(../fonts/Tahoma-bold.ttf);
-}
-@font-face {
-  font-family: "ArialNarrow";
-  src: url(../fonts/ARIALN.TTF);
-}
-@font-face {
-  font-family: "centuryGothicReg";
+  font-family: "CenturyGothic";
   src: url(../fonts/CenturyGothic.ttf);
+}
+@font-face {
+  font-family: "impact";
+  src: url(../fonts/impact.ttf);
 }
 /*===// end of abstracts css === */
 /*=== base css start === */
@@ -42,31 +38,12 @@ a, a:hover {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-body {
-  margin-top: 93px;
-  width: calc(100% - 300px);
-  margin-left: auto;
-}
-@media screen and (max-width: 1399px) {
-  .main-body {
-    margin-top: 98px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .main-body {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 575px) {
-  .main-body {
-    margin-top: 68px;
-  }
+  font-family: "CenturyGothic";
 }
 
 /*===// end of base css === */
+/*=== components css start === */
+/*===// end of components css === */
 /*=== layouts css start === */
 .home-header .brand-logo {
   max-width: 380px;
@@ -87,9 +64,12 @@ body {
   }
 }
 .home-header .navbar-collapse .navbar-nav .nav-link {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Barbara";
   font-size: 24px;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.8862745098);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media screen and (max-width: 767px) {
   .home-header .navbar-collapse .navbar-nav .nav-link {
@@ -97,27 +77,12 @@ body {
   }
 }
 
-.home-banner {
-  background: url(../images/home/banner-bg.png) no-repeat bottom center/cover;
-  padding: 20px 0 100px;
-}
-@media (min-width: 1400px) {
-  .home-banner {
-    padding-bottom: 150px;
-  }
-}
-@media (max-width: 400px) {
-  .home-banner {
-    padding-bottom: 60px;
-  }
-}
-
 .footer {
   padding: 50px 0 30px;
-  background: url(../images/home/footer-bg.png) no-repeat top center/cover;
+  background: linear-gradient(#e53a3a, #880606);
 }
 .footer .footer-button {
-  font-family: "centuryGothicReg";
+  font-family: "CenturyGothic";
   font-size: 70px;
   color: #fff;
   background: linear-gradient(0deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
@@ -155,7 +120,7 @@ body {
   padding-top: 50px;
 }
 .footer .footer-nav p {
-  font-family: "centuryGothicReg";
+  font-family: "CenturyGothic";
   font-size: 25px;
 }
 @media screen and (max-width: 1399px) {
@@ -169,7 +134,7 @@ body {
   }
 }
 .footer .footer-nav .footer-links .nav-link {
-  font-family: "centuryGothicReg";
+  font-family: "CenturyGothic";
   font-size: 25px;
   color: #fff;
   white-space: nowrap;
@@ -191,168 +156,63 @@ body {
 }
 
 /*===// end of layouts css === */
-/*=== components css start === */
-.btn-blue {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 26px;
-  color: #fff;
-  background: #00a2ff;
-  padding: 0 20px;
-  margin-top: 5px;
-  border-radius: 0;
+/*=== pages css start === */
+.home-banner {
+  background: url(../images/home/banner-bg.png) no-repeat bottom center/cover;
+  padding: 20px 0 150px;
 }
-@media screen and (max-width: 1399px) {
-  .btn-blue {
-    font-size: 20px;
+@media (min-width: 1400px) {
+  .home-banner {
+    padding-bottom: 220px;
   }
 }
-@media screen and (max-width: 575px) {
-  .btn-blue {
-    font-size: 16px;
+@media (max-width: 400px) {
+  .home-banner {
+    padding-bottom: 80px;
   }
 }
 
-.backoffice-video-section h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  font-style: italic;
-  color: #000;
-  text-align: center;
-  padding-bottom: 10px;
+.home-video-section {
+  padding-bottom: 20px;
 }
-@media screen and (max-width: 1399px) {
-  .backoffice-video-section h2 {
-    font-size: 22px;
+@media (min-width: 768px) {
+  .home-video-section {
+    margin-top: -40px;
   }
 }
 
-.home-video-section .section-heading {
-  font-family: "centuryGothicReg";
-  font-size: 60px;
-  color: #605e5e;
-  text-align: center;
-  padding-bottom: 10px;
-}
-@media screen and (max-width: 1399px) {
-  .home-video-section .section-heading {
-    font-size: 22px;
-  }
-}
-
-.welcome-freedom {
-  background: url(../images/home/ba-bg.png) no-repeat top right/cover;
+.how-work {
+  background: url(../images/home/how-work-bg.png) no-repeat top right/cover;
   padding-top: 200px;
-  padding-bottom: 120px;
-}
-@media (max-width: 767px) {
-  .welcome-freedom {
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
+  padding-bottom: 80px;
 }
 @media (max-width: 991px) {
-  .welcome-freedom {
-    padding-top: 80px;
-    padding-bottom: 50px;
+  .how-work {
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 }
-.welcome-freedom .section-heading {
-  font-family: "centuryGothicReg";
-  font-size: 36px;
-  color: #ffffff;
-  text-align: center;
-  padding-bottom: 10px;
+.how-work .section-heading {
+  font-family: "impact";
+  color: #fff;
 }
-@media (max-width: 768px) {
-  .welcome-freedom .section-heading {
-    font-size: 22px;
-  }
-}
-.welcome-freedom .top-para {
-  font-family: "centuryGothicReg";
-  font-size: 22px;
-  color: #ffffff;
-}
-@media (max-width: 768px) {
-  .welcome-freedom .top-para {
-    font-size: 16px;
-  }
+.how-work .section-sub-heading {
+  font-family: "impact";
+  color: #fff;
 }
 
-.our-pay-plan {
-  background: url(../images/home/pay-bg-1.png) no-repeat top center/cover;
-  padding-top: 50px;
+.matrix-board .matrix-board-content {
+  background-color: #000;
+  padding: 80px 0;
 }
-@media (max-width: 768px) {
-  .our-pay-plan {
-    padding-top: 20px;
+.matrix-board .matrix-board-content .matrix-board-img {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .matrix-board .matrix-board-content .matrix-board-img {
+    max-width: 50%;
   }
 }
-.our-pay-plan .section-heading {
-  font-family: "centuryGothicReg";
-  font-size: 70px;
-  color: #000000;
-  text-align: center;
-  padding-bottom: 30px;
-}
-@media (max-width: 1400) {
-  .our-pay-plan .section-heading {
-    font-size: 55px;
-  }
-}
-@media (max-width: 991px) {
-  .our-pay-plan .section-heading {
-    font-size: 42px;
-  }
-}
-@media (max-width: 767px) {
-  .our-pay-plan .section-heading {
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-}
-.our-pay-plan .text h5,
-.our-pay-plan .text li,
-.our-pay-plan .text p {
-  font-family: "centuryGothicReg";
-  font-size: 24px;
-  color: #000000;
-}
-@media (max-width: 991px) {
-  .our-pay-plan .text h5,
-.our-pay-plan .text li,
-.our-pay-plan .text p {
-    font-size: 18px;
-  }
-}
-.our-pay-plan .text li {
-  list-style-type: decimal;
-}
-.our-pay-plan .text .team-text {
-  font-family: "centuryGothicReg";
-  font-size: 45px;
-  color: #000000;
-  text-align: center;
-  padding: 30px 0;
-}
-@media (max-width: 1399px) {
-  .our-pay-plan .text .team-text {
-    font-size: 35px;
-  }
-}
-@media (max-width: 991px) {
-  .our-pay-plan .text .team-text {
-    font-size: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .our-pay-plan .text .team-text {
-    font-size: 18px;
-    padding: 15px 0;
-  }
-}
-
-/*===// end of components css === *//*# sourceMappingURL=style.css.map */
+.matrix-board .matrix-board-content p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

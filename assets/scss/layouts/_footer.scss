@@ -1,9 +1,9 @@
 .footer {
    padding: 50px 0 30px;
-   background: url(../images/home/footer-bg.png) no-repeat top center/cover;
+   background: linear-gradient(#e53a3a, #880606);
 
    .footer-button {
-      font-family: 'centuryGothicReg';
+      font-family: 'CenturyGothic';
       font-size: 70px;
       color: #fff;
       background: linear-gradient(0deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
@@ -43,7 +43,7 @@
       padding-top: 50px;
 
       p {
-         font-family: 'centuryGothicReg';
+         font-family: 'CenturyGothic';
          font-size: 25px;
 
          @media screen and (max-width: 1399px) {
@@ -57,7 +57,7 @@
 
       .footer-links {
          .nav-link {
-            font-family: 'centuryGothicReg';
+            font-family: 'CenturyGothic';
             font-size: 25px;
             color: #fff;
             white-space: nowrap;

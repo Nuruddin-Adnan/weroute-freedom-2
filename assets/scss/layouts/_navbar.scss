@@ -18,9 +18,12 @@
    .navbar-collapse {
       .navbar-nav {
          .nav-link {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Barbara';
             font-size: 24px;
             font-weight: 400;
+            color: #000000e2;
+            padding-left: 1rem;
+            padding-right: 1rem;
 
             @media screen and (max-width: 767px) {
                font-size: 18px;

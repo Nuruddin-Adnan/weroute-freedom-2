@@ -12,6 +12,11 @@
 /*===// end of base css === */
 
 
+/*=== components css start === */
+/*===// end of components css === */
+
+
+
 /*=== layouts css start === */
 @import 'layouts/navbar';
 @import 'layouts/banner';
@@ -19,9 +24,6 @@
 /*===// end of layouts css === */
 
 
-/*=== components css start === */
-@import 'components/buttons';
-@import 'components/video-section';
-@import 'components/welcome-freedom';
-@import 'components/pay-plan';
-/*===// end of components css === */
+/*=== pages css start === */
+@import 'pages/home'
+/*===// end of pages css === */

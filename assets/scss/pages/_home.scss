@@ -1,0 +1,65 @@
+.home-banner {
+    background: url(../images/home/banner-bg.png) no-repeat bottom center/cover;
+    padding: 20px 0 150px;
+
+    @media(min-width: 1400px) {
+        padding-bottom: 220px;
+    }
+
+    @media(max-width: 400px) {
+        padding-bottom: 80px;
+    }
+}
+
+.home-video-section {
+    padding-bottom: 20px;
+
+    @media(min-width: 768px) {
+        margin-top: -40px;
+    }
+}
+
+.how-work {
+    background: url(../images/home/how-work-bg.png) no-repeat top right/cover;
+    padding-top: 200px;
+    padding-bottom: 80px;
+
+    @media(max-width: 991px) {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    // @media(max-width: 991px) {
+    //     padding-top: 80px;
+    //     padding-bottom: 50px;
+    // }
+
+    .section-heading {
+        font-family: 'impact';
+        color: #fff;
+    }
+
+    .section-sub-heading {
+        font-family: 'impact';
+        color: #fff;
+    }
+}
+
+.matrix-board {
+    .matrix-board-content {
+        background-color: #000;
+        padding: 80px 0;
+
+        .matrix-board-img {
+            padding: 10px;
+
+            @media(min-width: 768px) {
+                max-width: 50%;
+            }
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+}
